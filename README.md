@@ -2,10 +2,18 @@
 
 A Chef cookbook to provision an Ubundu with i3-gaps workstations.
 
+## Requirements
+
+1. ChefDK
+    * Download the latest version: https://downloads.chef.io/chefdk
+    * Install with `sudo dpkg -i chefdk_VERSION_amd64.deb` 
+
 ## Usage
 
-- Check out [`attributes/default.rb`](attributes/default.rb) for what can be configured.
-- Include `ubuntu_i3-gaps_workstation::default` as a recipe in your runlist.
+1. Clone this repository
+2. Update the `solo.rb` and make it point to the directory containing this repository
+3. Check out [`attributes/default.rb`](attributes/default.rb) for what can be configured.
+4. Run it `sudo chef-solo -c solo.rb -o 'recipe[ubuntu_i3-gaps_workstation]'` 
 
 ## Contributing
 
