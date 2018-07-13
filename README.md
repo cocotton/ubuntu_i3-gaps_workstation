@@ -1,6 +1,6 @@
 # ubuntu_i3-gaps_workstation
 
-A Chef cookbook to provision Ubundu and i3-gaps based workstations.
+A Chef cookbook to provision an Ubundu with i3-gaps workstations.
 
 ## Usage
 
