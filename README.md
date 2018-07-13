@@ -5,8 +5,8 @@ A Chef cookbook to provision an Ubundu with i3-gaps workstations.
 ## Requirements
 
 1. ChefDK
-  * Download the latest version: https://downloads.chef.io/chefdk
-  * Install with `sudo dpkg -i chefdk_VERSION_amd64.deb` 
+    * Download the latest version: https://downloads.chef.io/chefdk
+    * Install with `sudo dpkg -i chefdk_VERSION_amd64.deb` 
 
 ## Usage
 
