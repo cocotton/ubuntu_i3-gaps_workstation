@@ -12,8 +12,9 @@ A Chef cookbook to provision an Ubundu with i3-gaps workstations.
 
 1. Clone this repository
 2. Update the `solo.rb` and make it point to the directory containing this repository
-3. Check out [`attributes/default.rb`](attributes/default.rb) for what can be configured.
-4. Run it `sudo chef-solo -c solo.rb -o 'recipe[ubuntu_i3-gaps_workstation]'` 
+3. Update the `default['ubuntu_i3-gaps_workstation']['user']` to match your own user  
+4. Check out [`attributes/default.rb`](attributes/default.rb) for what can be configured.
+5. Run it `sudo chef-solo -c solo.rb -o 'recipe[ubuntu_i3-gaps_workstation]'` 
 
 ## Contributing
 
