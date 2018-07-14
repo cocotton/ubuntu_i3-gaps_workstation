@@ -17,5 +17,7 @@
 # limitations under the License.
 
 abort 'This cookbook is only usable with Ubuntu' unless node['platform'] == 'ubuntu'
+abort "You must set your user with the default['ubuntu_i3-gaps_workstation']['user'] attribute" if node['ubuntu_i3-gaps_workstation']['user'] == ""
 
 include_recipe '::grub'
+include_recipe '::vim'
