@@ -1,5 +1,6 @@
 name 'ubuntu_i3-gaps_workstation'
 maintainer 'Julien Parent-Trudeau'
+maintainer_email 'julien.parent.trudeau@gmail.com'
 license 'Apache-2.0'
 description 'Installs/Configures ubuntu_i3-gaps_workstation'
 long_description 'Installs/Configures ubuntu-i3-gaps_workstation'
