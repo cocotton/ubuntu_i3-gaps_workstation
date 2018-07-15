@@ -1,8 +1,8 @@
 #
-# Cookbook:: ubuntu_i3-gaps_workstation 
+# Cookbook:: ubuntu_i3-gaps_workstation
 # Recipe:: default
 #
-# Copyright:: 2018, Julien Parent-Trudeau 
+# Copyright:: 2018, Julien Parent-Trudeau
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,3 +21,4 @@ abort "You must set your user with the default['ubuntu_i3-gaps_workstation']['us
 
 include_recipe '::grub'
 include_recipe '::vim'
+include_recipe '::i3-gaps' if node['ubuntu_i3-gaps_workstation']['i3-gaps']['install']
