@@ -28,3 +28,4 @@ end
 include_recipe '::grub'
 include_recipe '::vim'
 include_recipe '::i3-gaps' if node['ubuntu_i3-gaps_workstation']['i3-gaps']['install']
+include_recipe '::i3-gaps_config'
