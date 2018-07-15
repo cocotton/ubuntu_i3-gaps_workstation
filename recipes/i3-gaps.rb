@@ -1,4 +1,5 @@
-i3_repo_path = '/tmp/i3-gaps'
+user = node['ubuntu_i3-gaps_workstation']['user']
+i3_repo_path = "#{node['ubuntu_i3-gaps_workstation']['tmp_dir']}/i3-gaps"
 
 # Install required packages listed here: https://github.com/Airblader/i3/wiki/Compiling-&-Installing#1610-
 %w[
@@ -30,12 +31,15 @@ end
 git i3_repo_path do
   repository 'https://github.com/Airblader/i3.git'
   revision 'gaps-next'
+  user user
+  group user
 end
 
 # Generate the i3-gaps configuration files
 execute 'run_autoreconf' do
   command 'autoreconf --force --install'
   cwd i3_repo_path
+  user user
   live_stream true
 end
 
@@ -46,12 +50,16 @@ directory "#{i3_repo_path}/build" do
 end
 
 # Create the i3-gaps/build directory
-directory "#{i3_repo_path}/build"
+directory "#{i3_repo_path}/build" do
+  user user
+  group user
+end
 
 # Configure i3-gaps before compiling it
 execute 'configure_i3-gaps' do
   command '../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers'
   cwd "#{i3_repo_path}/build"
+  user user
   live_stream true
 end
 
@@ -59,6 +67,7 @@ end
 execute 'compile_i3-gaps' do
   command 'make'
   cwd "#{i3_repo_path}/build"
+  user user
   live_stream true
 end
 
