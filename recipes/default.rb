@@ -20,9 +20,9 @@ abort 'This cookbook is only usable with Ubuntu' unless node['platform'] == 'ubu
 abort "You must set your user with the default['ubuntu_i3-gaps_workstation']['user'] attribute" if node['ubuntu_i3-gaps_workstation']['user'] == ""
 
 # Create a Tmp directory in the user home
-directory ['ubuntu_i3-gaps_workstation']['tmp_dir'] do
-  owner ['ubuntu_i3-gaps_workstation']['user']
-  group ['ubuntu_i3-gaps_workstation']['user']
+directory node['ubuntu_i3-gaps_workstation']['tmp_dir'] do
+  owner node['ubuntu_i3-gaps_workstation']['user']
+  group node['ubuntu_i3-gaps_workstation']['user']
 end
 
 include_recipe '::grub'
