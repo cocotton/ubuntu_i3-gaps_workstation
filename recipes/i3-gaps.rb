@@ -29,7 +29,7 @@ end
 
 # Clone the i3-gaps repository
 git i3_repo_path do
-  repository 'https://github.com/Airblader/i3.git'
+  repository node['ubuntu_i3-gaps_workstation']['i3-gaps']['repo_url']
   revision 'gaps-next'
   user user
   group user
