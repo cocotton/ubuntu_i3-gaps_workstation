@@ -96,7 +96,11 @@ link '/usr/local/share/terminfo/x/xterm-termite' do
   to '/lib/terminfo/x/xterm-termite'
 end
 
-
-
-
-
+# Install the termite configuration
+remote_directory "/home/#{user}/.config/termite" do
+  source '.config/termite'
+  owner user
+  group user
+  files_owner user
+  files_group user
+end
