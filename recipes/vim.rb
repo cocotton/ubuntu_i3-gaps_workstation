@@ -1,4 +1,3 @@
-# Set the user from the attributes
 user = node['ubuntu_i3-gaps_workstation']['user']
 
 # Install the Vim package
