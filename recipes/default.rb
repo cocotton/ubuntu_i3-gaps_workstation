@@ -31,3 +31,4 @@ include_recipe '::i3-gaps' if node['ubuntu_i3-gaps_workstation']['i3-gaps']['ins
 include_recipe '::i3-gaps_config'
 include_recipe '::extra'
 include_recipe '::termite' if node['ubuntu_i3-gaps_workstation']['termite']['install']
+include_recipe '::termite_config'
