@@ -2,7 +2,7 @@ user = node['ubuntu_i3-gaps_workstation']['user']
 termite_repo_path = "#{node['ubuntu_i3-gaps_workstation']['tmp_dir']}/termite"
 vte_ng_repo_path = "#{node['ubuntu_i3-gaps_workstation']['tmp_dir']}/vte-ng"
 
-ENV['LIBRARY_PATH'] = "/usr/include/gtk-3.0"
+ENV['LIBRARY_PATH'] = '/usr/include/gtk-3.0'
 
 # Install required packages
 %w[
