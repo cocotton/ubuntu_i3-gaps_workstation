@@ -34,7 +34,7 @@ file "/home/#{user}/oh-my-zsh_installer.sh" do
   action :delete
 end
 
-# Copy the .zshrc config file. We do this after installing oh-my-zsh since the config file is already oh-my-zsh ready.
+# Copy the .zshrc config file. We do this after installing oh-my-zsh since the config file is already oh-my-zsh ready
 cookbook_file "/home/#{user}/.zshrc" do
   source '.zshrc'
   owner user
