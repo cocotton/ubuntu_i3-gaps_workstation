@@ -1,6 +1,6 @@
 user = node['ubuntu_i3-gaps_workstation']['user']
 
-# Install the Vim package
+# Install the vim package
 package 'install_vim' do
   package_name 'vim'
 end

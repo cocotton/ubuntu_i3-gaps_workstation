@@ -4,7 +4,6 @@
   compton
   rofi
   feh
-  zsh
   ranger
   glances
   scrot
