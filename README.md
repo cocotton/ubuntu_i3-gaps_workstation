@@ -1,6 +1,6 @@
 # ubuntu_i3-gaps_workstation
 
-A Chef cookbook to provision an Ubundu with i3-gaps workstations.
+A Chef cookbook to provision a Ubuntu with i3-gaps workstations.
 
 ## Requirements
 
