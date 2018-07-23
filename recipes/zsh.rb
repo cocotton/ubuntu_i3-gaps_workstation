@@ -13,6 +13,7 @@ end
 execute 'update_shell' do
   command "chsh -s #{zsh_bin_path} #{user}"
   live_stream true
+  not_if "grep -E #{user}.*zsh$ /etc/passwd"
 end
 
 # Copy the zsh oh-my-zsh_installer.sh script
@@ -20,6 +21,8 @@ cookbook_file "/home/#{user}/oh-my-zsh_installer.sh" do
   source 'oh-my-zsh_installer.sh'
   owner user
   group user
+  notifies :run, 'execute[install_oh-my-zsh]', :immediate
+  not_if { ::Dir.exists?("/home/#{user}/.oh-my-zsh") }
 end
 
 # Install oh-my-zsh using the local script installer
@@ -27,6 +30,7 @@ execute 'install_oh-my-zsh' do
   command "/bin/sh /home/#{user}/oh-my-zsh_installer.sh"
   user user
   live_stream true
+  action :nothing
 end
 
 # Remove the oh-my-zsh_installer.sh script
