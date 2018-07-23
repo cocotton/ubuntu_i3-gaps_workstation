@@ -38,3 +38,4 @@ include_recipe '::polybar' if node['ubuntu_i3-gaps_workstation']['polybar']['ins
 include_recipe '::polybar_config'
 include_recipe '::light' if node['ubuntu_i3-gaps_workstation']['light']['install']
 include_recipe '::playerctl'
+include_recipe '::golang'
