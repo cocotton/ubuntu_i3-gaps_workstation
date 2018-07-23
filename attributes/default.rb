@@ -1,6 +1,8 @@
 default['ubuntu_i3-gaps_workstation']['user'] = ''
 default['ubuntu_i3-gaps_workstation']['tmp_dir'] = "/home/#{node['ubuntu_i3-gaps_workstation']['user']}/Tmp"
 
+default['ubuntu_i3-gaps_workstation']['golang']['version'] = '1.10.3'
+
 default['ubuntu_i3-gaps_workstation']['i3-gaps']['install'] = true
 default['ubuntu_i3-gaps_workstation']['i3-gaps']['repo_url'] = 'https://github.com/Airblader/i3.git'
 
