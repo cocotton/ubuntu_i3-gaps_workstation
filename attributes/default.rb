@@ -4,6 +4,9 @@ default['ubuntu_i3-gaps_workstation']['tmp_dir'] = "/home/#{node['ubuntu_i3-gaps
 default['ubuntu_i3-gaps_workstation']['i3-gaps']['install'] = true
 default['ubuntu_i3-gaps_workstation']['i3-gaps']['repo_url'] = 'https://github.com/Airblader/i3.git'
 
+default['ubuntu_i3-gaps_workstation']['light']['install'] = true
+default['ubuntu_i3-gaps_workstation']['light']['repo_url'] = 'https://github.com/haikarainen/light.git'
+
 default['ubuntu_i3-gaps_workstation']['polybar']['install'] = true
 default['ubuntu_i3-gaps_workstation']['polybar']['repo_url'] = 'https://github.com/jaagr/polybar'
 
