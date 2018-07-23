@@ -77,3 +77,9 @@ execute 'install_i3-gaps' do
   cwd "#{i3_repo_path}/build"
   live_stream true
 end
+
+# Cleanup
+directory i3_repo_path do
+  recursive true
+  action :delete
+end

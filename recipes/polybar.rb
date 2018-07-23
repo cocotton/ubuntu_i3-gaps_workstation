@@ -67,3 +67,9 @@ execute 'install_polybar' do
   cwd "#{polybar_repo_path}/build"
   live_stream true
 end
+
+# Cleanup
+directory polybar_repo_path do
+  recursive true
+  action :delete
+end
