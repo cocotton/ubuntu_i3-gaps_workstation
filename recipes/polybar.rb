@@ -61,6 +61,7 @@ execute 'build_polybar' do
 end
 
 # Install polybar
+# If the installation does not work, try adding the following line: https://github.com/jaagr/xpp/pull/11/files#diff-4a6135f0407cc0561387e00e9b97e2ffR3142
 execute 'install_polybar' do
   command 'make install'
   cwd "#{polybar_repo_path}/build"
