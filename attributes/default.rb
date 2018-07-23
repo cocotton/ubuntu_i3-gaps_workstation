@@ -13,7 +13,8 @@ default['ubuntu_i3-gaps_workstation']['playerctl']['deb_package']['source'] = 'h
 default['ubuntu_i3-gaps_workstation']['playerctl']['deb_package']['checksum'] = '2d03a17d4d9220e6fa2e71f9ba050ccbb90a321f84624b68c483f0769f4796f4'
 
 default['ubuntu_i3-gaps_workstation']['polybar']['install'] = true
-default['ubuntu_i3-gaps_workstation']['polybar']['repo_url'] = 'https://github.com/jaagr/polybar'
+default['ubuntu_i3-gaps_workstation']['polybar']['repository']['revision'] = '3.1.0'
+default['ubuntu_i3-gaps_workstation']['polybar']['repository']['url'] = 'https://github.com/jaagr/polybar'
 
 default['ubuntu_i3-gaps_workstation']['termite']['install'] = true
 default['ubuntu_i3-gaps_workstation']['termite']['repo_url'] = 'https://github.com/thestinger/termite.git'
