@@ -97,6 +97,11 @@ link '/usr/local/share/terminfo/x/xterm-termite' do
 end
 
 # Cleanup
+directory vte_ng_repo_path do
+  recursive true
+  action :delete
+end
+
 directory termite_repo_path do
   recursive true
   action :delete
