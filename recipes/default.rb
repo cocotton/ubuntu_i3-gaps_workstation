@@ -36,3 +36,4 @@ include_recipe '::termite' if node['ubuntu_i3-gaps_workstation']['termite']['ins
 include_recipe '::termite_config'
 include_recipe '::polybar' if node['ubuntu_i3-gaps_workstation']['polybar']['install']
 include_recipe '::polybar_config'
+include_recipe '::light' if node['ubuntu_i3-gaps_workstation']['light']['install']
