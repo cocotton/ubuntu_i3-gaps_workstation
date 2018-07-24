@@ -11,6 +11,7 @@
   hsetroot
   curl
   jq
+  virtualbox
 ].each do |package|
   package "install_#{package}" do
     package_name package
