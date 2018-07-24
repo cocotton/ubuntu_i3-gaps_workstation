@@ -17,5 +17,7 @@ default['ubuntu_i3-gaps_workstation']['polybar']['repository']['revision'] = '3.
 default['ubuntu_i3-gaps_workstation']['polybar']['repository']['url'] = 'https://github.com/jaagr/polybar'
 
 default['ubuntu_i3-gaps_workstation']['termite']['install'] = true
-default['ubuntu_i3-gaps_workstation']['termite']['repo_url'] = 'https://github.com/thestinger/termite.git'
-default['ubuntu_i3-gaps_workstation']['termite']['vte-ng']['repo_url'] = 'https://github.com/thestinger/vte-ng.git'
+default['ubuntu_i3-gaps_workstation']['termite']['repository']['url'] = 'https://github.com/thestinger/termite.git'
+default['ubuntu_i3-gaps_workstation']['termite']['repository']['revision'] = 'master'
+default['ubuntu_i3-gaps_workstation']['termite']['vte-ng']['repository']['url'] = 'https://github.com/thestinger/vte-ng.git'
+default['ubuntu_i3-gaps_workstation']['termite']['vte-ng']['repository']['revision'] = '0.50.2-ng'

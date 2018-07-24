@@ -27,8 +27,8 @@ end
 
 # Clone the vte-ng repository
 git vte_ng_repo_path do
-  repository node['ubuntu_i3-gaps_workstation']['termite']['vte-ng']['repo_url']
-  revision '0.50.2-ng'
+  repository node['ubuntu_i3-gaps_workstation']['termite']['vte-ng']['repository']['url']
+  revision node['ubuntu_i3-gaps_workstation']['termite']['vte-ng']['repository']['revision']
   user user
   group user
 end
@@ -58,8 +58,8 @@ end
 
 # Clone the termite repository
 git termite_repo_path do
-  repository node['ubuntu_i3-gaps_workstation']['termite']['repo_url']
-  revision 'master'
+  repository node['ubuntu_i3-gaps_workstation']['termite']['repository']['url']
+  revision node['ubuntu_i3-gaps_workstation']['termite']['repository']['revision']
   enable_submodules true
   user user
   group user
