@@ -23,4 +23,6 @@ default['ubuntu_i3-gaps_workstation']['termite']['repository']['revision'] = 'ma
 default['ubuntu_i3-gaps_workstation']['termite']['vte-ng']['repository']['url'] = 'https://github.com/thestinger/vte-ng.git'
 default['ubuntu_i3-gaps_workstation']['termite']['vte-ng']['repository']['revision'] = '0.50.2-ng'
 
+default['ubuntu_i3-gaps_workstation']['virtualbox']['deb_package']['source'] = 'https://download.virtualbox.org/virtualbox/5.2.16/virtualbox-5.2_5.2.16-123759~Ubuntu~bionic_amd64.deb'
+
 default['ubuntu_i3-gaps_workstation']['vscode']['deb_package']['source'] = 'https://go.microsoft.com/fwlink/?LinkID=760868'
