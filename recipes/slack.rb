@@ -25,7 +25,7 @@ remote_file slack_deb_path do
   owner user
   group user
   notifies :install, 'dpkg_package[install_slack]', :immediate
-  not_if 'dpkg -l | grep slack'
+  not_if 'dpkg -l | grep slack-desktop'
 end
 
 # Install slack
