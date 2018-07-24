@@ -40,3 +40,4 @@ include_recipe '::light' if node['ubuntu_i3-gaps_workstation']['light']['install
 include_recipe '::playerctl'
 include_recipe '::golang'
 include_recipe '::slack'
+include_recipe '::vscode'
