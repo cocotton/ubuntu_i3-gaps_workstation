@@ -33,8 +33,8 @@ end
 
 # Clone the polybar repository
 git polybar_repo_path do
-  repository node['ubuntu_i3-gaps_workstation']['polybar']['repo_url']
-  revision '3.1.0'
+  repository node['ubuntu_i3-gaps_workstation']['polybar']['repository']['url']
+  revision node['ubuntu_i3-gaps_workstation']['polybar']['repository']['revision']
   user user
   group user
   enable_submodules true
