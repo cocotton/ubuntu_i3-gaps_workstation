@@ -13,9 +13,9 @@
 set $mod Mod4
 
 # Custom display variables
-set $primary_monitor DP-1-1-2
-set $secondary_monitor DP-1-2-2
-set $pc_monitor eDP-1-1
+set $left_monitor DP-2-1
+set $middle_monitor DP-2-2-8
+set $right_monitor DP-1-2-8
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -90,16 +90,16 @@ set $workspace9 "9"
 set $workspace10 "10"
 
 # Custom workout output attributions
-workspace $workspace1 output DP-1-1-2
-workspace $workspace2 output DP-1-1-2
-workspace $workspace3 output DP-1-1-2
-workspace $workspace4 output DP-1-2-2
-workspace $workspace5 output DP-1-2-2
-workspace $workspace6 output DP-1-2-2
-workspace $workspace10 output eDP-1-1
-workspace $workspace7 output eDP-1-1
-workspace $workspace8 output eDP-1-1
-workspace $workspace9 output eDP-1-1
+workspace $workspace1 output $left_monitor
+workspace $workspace2 output $left_monitor
+workspace $workspace3 output $left_monitor
+workspace $workspace4 output $middle_monitor
+workspace $workspace5 output $middle_monitor
+workspace $workspace6 output $middle_monitor
+workspace $workspace10 output $right_monitor
+workspace $workspace7 output $right_monitor
+workspace $workspace8 output $right_monitor
+workspace $workspace9 output $right_monitor
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
