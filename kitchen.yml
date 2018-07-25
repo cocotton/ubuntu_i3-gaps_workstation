@@ -16,8 +16,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[ubuntu_i3-gaps_workstation::user]
       - recipe[ubuntu_i3-gaps_workstation::default]
     attributes:
       ubuntu_i3-gaps_workstation:
-        user: test-user
+        user: vagrant
