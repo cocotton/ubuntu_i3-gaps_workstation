@@ -15,6 +15,8 @@ default['ubuntu_i3-gaps_workstation']['polybar']['install'] = true
 default['ubuntu_i3-gaps_workstation']['polybar']['repository']['revision'] = '3.1.0'
 default['ubuntu_i3-gaps_workstation']['polybar']['repository']['url'] = 'https://github.com/jaagr/polybar'
 
+default['ubuntu_i3-gaps_workstation']['slack']['version'] = '3.2.1'
+
 default['ubuntu_i3-gaps_workstation']['termite']['install'] = true
 default['ubuntu_i3-gaps_workstation']['termite']['repository']['url'] = 'https://github.com/thestinger/termite.git'
 default['ubuntu_i3-gaps_workstation']['termite']['repository']['revision'] = 'master'

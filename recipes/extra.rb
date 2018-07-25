@@ -11,7 +11,6 @@
   hsetroot
   curl
   jq
-  slack-desktop
   virtualbox
   vagrant
 ].each do |package|
