@@ -20,3 +20,6 @@ suites:
     attributes:
       ubuntu_i3-gaps_workstation:
         user: vagrant
+        # We disable polybar installation since manual intervention is required
+        polybar:
+          install: false
