@@ -1,6 +1,15 @@
 user = node['ubuntu_i3-gaps_workstation']['user']
 vscode_deb_path = "#{node['ubuntu_i3-gaps_workstation']['tmp_dir']}/vscode.deb"
 
+# Install required packages
+%w[
+  libxkbfile1
+].each do |package|
+  package "install_#{package}" do
+    package_name package
+  end
+end
+
 # Download vscode deb package
 remote_file vscode_deb_path do
   source node['ubuntu_i3-gaps_workstation']['vscode']['deb_package']['source']
