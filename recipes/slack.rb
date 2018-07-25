@@ -3,8 +3,14 @@ slack_deb_path = "#{node['ubuntu_i3-gaps_workstation']['tmp_dir']}/slack.deb"
 
 # Install required packages
 %w[
+  libnotify4
+  xdg-utils
+  gvfs-bin
   gconf2
   gconf2-common
+  gvfs
+  gvfs-common
+  desktop-file-utils
   libgconf-2-4
   gconf-service-backend
   gconf-service
@@ -16,7 +22,14 @@ slack_deb_path = "#{node['ubuntu_i3-gaps_workstation']['tmp_dir']}/slack.deb"
 ].each do |package|
   package "install_#{package}" do
     package_name package
+    ignore_failure true
   end
+end
+
+# There are some dependencies issues with the required packages, but apt --fix-broken fixes everything
+execute 'apt_fix-broken_install' do
+  command 'apt --fix-broken install -y'
+  live_stream true
 end
 
 # Download slack deb package
