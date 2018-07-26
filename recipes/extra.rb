@@ -11,6 +11,7 @@
   hsetroot
   curl
   jq
+  pavucontrol
   virtualbox
   vagrant
   lxappearance
