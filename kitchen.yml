@@ -1,0 +1,25 @@
+---
+driver:
+  name: vagrant
+
+driver_config:
+  customize:
+    cpus: 4
+    memory: 6144
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-18.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[ubuntu_i3-gaps_workstation::default]
+    attributes:
+      ubuntu_i3-gaps_workstation:
+        user: vagrant
+        # We disable polybar installation since manual intervention is required
+        polybar:
+          install: false

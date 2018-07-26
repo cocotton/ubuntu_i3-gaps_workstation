@@ -25,6 +25,12 @@ directory node['ubuntu_i3-gaps_workstation']['tmp_dir'] do
   group node['ubuntu_i3-gaps_workstation']['user']
 end
 
+# Run apt-get update. I could include the apt recipe instead, but I don't want to deal with dependencies
+execute 'apt-get_update' do
+  command 'apt-get update'
+  live_stream true
+end
+
 include_recipe '::grub'
 include_recipe '::vim'
 include_recipe '::zsh'

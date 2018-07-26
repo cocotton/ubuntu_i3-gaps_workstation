@@ -18,6 +18,7 @@ A Chef cookbook to provision a Ubuntu with i3-gaps workstations.
 
 ## Notes
 - If `i3-gaps` is already installed and you don't want to reinstall it, simply set the `node['ubuntu_i3-gaps_workstation']['i3-gaps']['install']` attribute to `false`
+- If `light` is already installed and you don't want to reinstall it, simply set the `node['ubuntu_i3-gaps_workstation']['light']['install']` attribute to `false`
 - If `termite` is already installed and you don't want to reinstall it, simply set the `node['ubuntu_i3-gaps_workstation']['termite']['install']` attribute to `false`
 - If `polybar` is already installed and you don't want to reinstall it, simply set the `node['ubuntu_i3-gaps_workstation']['polybar']['install']` attribute to `false`
 
