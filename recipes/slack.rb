@@ -30,6 +30,7 @@ end
 execute 'apt_fix-broken_install' do
   command 'apt --fix-broken install -y'
   live_stream true
+  not_if 'dpkg -l | grep slack-desktop'
 end
 
 # Download slack deb package
