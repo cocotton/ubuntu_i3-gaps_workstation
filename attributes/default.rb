@@ -15,7 +15,7 @@ default['ubuntu_i3-gaps_workstation']['polybar']['install'] = true
 default['ubuntu_i3-gaps_workstation']['polybar']['repository']['revision'] = '3.1.0'
 default['ubuntu_i3-gaps_workstation']['polybar']['repository']['url'] = 'https://github.com/jaagr/polybar'
 
-default['ubuntu_i3-gaps_workstation']['nvidia']['driver'] = 'nvidia-driver-390'
+default['ubuntu_i3-gaps_workstation']['nvidia']['driver']['version'] = '390'
 
 default['ubuntu_i3-gaps_workstation']['slack']['version'] = '3.2.1'
 

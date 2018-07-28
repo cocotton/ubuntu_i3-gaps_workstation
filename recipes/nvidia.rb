@@ -1,4 +1,6 @@
+driver_package = "nvidia-driver-#{node['ubuntu_i3-gaps_workstation']['nvidia']['driver']['version']}"
+
 # Install nvidia-driver package
-package "install_#{node['ubuntu_i3-gaps_workstation']['nvidia']['driver']}" do
-  package_name node['ubuntu_i3-gaps_workstation']['nvidia']['driver']
+package "install_#{driver_package}" do
+  package_name driver_package
 end
