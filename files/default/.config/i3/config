@@ -13,9 +13,9 @@
 set $mod Mod4
 
 # Custom display variables
-set $left_monitor DP-2-1
-set $middle_monitor DP-2-2-8
-set $right_monitor DP-1-2-8
+set $left_monitor DP-1-2-1
+set $middle_monitor DP-1-2-2-8
+set $right_monitor DP-1-1-2-8
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
