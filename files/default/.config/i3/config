@@ -13,8 +13,8 @@
 set $mod Mod4
 
 # Custom display variables
-set $left_monitor DP-1-2-1
-set $middle_monitor DP-1-2-2-8
+set $left_monitor DP-1-1-2-1-1
+set $middle_monitor DP-1-1-2-1-8
 set $right_monitor DP-1-1-2-8
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -224,7 +224,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Custom xrandr configs
-exec_always --no-startup-id xrandr --output DP-1-2-3 --off --output DP-1-2-2-1 --off --output HDMI-1-2 --off --output HDMI-1-1 --off --output DP-1-2-1 --mode 1920x1200 --pos 1920x0 --rotate normal --output eDP-1-1 --off --output DP-1-1-3 --off --output DP-1-1-2-1 --off --output DP-1-1-1 --off --output DP-1-2-2 --off --output DP-1-2-2-8 --mode 1920x1200 --pos 3840x0 --rotate normal --output DP-1-1-2-8 --mode 1920x1200 --pos 5760x0 --rotate normal --output DP-1-2 --off --output DP-1-1 --off --output DP-1-1-2 --off
+exec_always --no-startup-id xrandr --output DP-1-1-2-1-8 --primary --mode 1920x1200 --pos 1920x0 --rotate normal --output HDMI-1-2 --off --output HDMI-1-1 --off --output DP-1-1-2-1-1 --mode 1920x1200 --pos 0x0 --rotate normal --output eDP-1-1 --off --output DP-1-1-3 --off --output DP-1-1-2-1 --off --output DP-1-1-1 --off --output DP-1-2-2 --off --output DP-1-2-1 --off --output DP-1-2-3 --off --output DP-1-1-2-8 --mode 1920x1200 --pos 3840x0 --rotate normal --output DP-1-2 --off --output DP-1-1 --off --output DP-1-1-2 --off
 
 # Custom compton
 # FIXME
