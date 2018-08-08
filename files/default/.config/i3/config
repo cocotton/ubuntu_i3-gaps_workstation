@@ -203,9 +203,6 @@ exec_always --no-startup-id "setxkbmap -layout us,ca -variant altgr-intl,multi -
 # Custom rofi binding
 bindsym $mod+d exec rofi -show run -lines 5 -eh 1 -width 100 -padding 486 -opacity "95" -bw 0 -line-margin 5 -font "Inconsolata Bold 20"
 
-# Custom wallpaper
-exec_always --no-startup-id hsetroot -add "#c79081" -add "#dfa579" -gradient 0
-
 # Custom screen locking binding
 bindsym $mod+Shift+x exec ~/.config/i3/scripts/lock.sh ~/.config/i3/scripts/lock.png
 
@@ -229,6 +226,9 @@ exec_always --no-startup-id xrandr --output DP-1-1-2-1-8 --primary --mode 1920x1
 # Custom compton
 # FIXME
 exec --no-startup-id compton -f
+
+# Custom wallpaper
+exec_always --no-startup-id feh --bg-scale ~/.config/i3/wallpaper/wallpaper.jpg
 
 # Custom program execution on startup
 exec i3-msg "workspace 1; exec /usr/bin/firefox"
