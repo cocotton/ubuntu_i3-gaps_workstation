@@ -198,7 +198,7 @@ gaps inner 5
 gaps outer 1
 
 # Custom keyboard layout
-exec_always --no-startup-id "setxkbmap -layout us,ca -variant altgr-intl,multi -option grp:rwin_toggle"
+exec_always --no-startup-id "setxkbmap -layout us,ca -variant altgr-intl,multi -option grp:rctrl_toggle"
 
 # Custom rofi binding
 bindsym $mod+d exec rofi -show run -lines 5 -eh 1 -width 100 -padding 486 -opacity "95" -bw 0 -line-margin 5 -font "Inconsolata Bold 20"
