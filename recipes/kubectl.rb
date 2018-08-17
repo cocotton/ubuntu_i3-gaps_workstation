@@ -1,5 +1,5 @@
 # Add the spotify apt repository
-apt_repository 'spotify' do
+apt_repository 'kubectl' do
   uri 'http://apt.kubernetes.io/'
   key 'https://packages.cloud.google.com/apt/doc/apt-key.gpg'
   distribution 'kubernetes-xenial'
